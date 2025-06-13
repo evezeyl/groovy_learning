@@ -1,8 +1,13 @@
 # Setup 
 
+-Gemini chat for help
+
+
 ## VSCode extensions
 - [groovy linting](https://marketplace.visualstudio.com/items?itemName=NicolasVuillamy.vscode-groovy-lint)
 - [code runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
+
+Recommendation added to work environment
 
 
 ## package manager
@@ -82,10 +87,28 @@ eg.
 import org.json.JSONObject
 ```
 
+## helpers for learning
+
+- groovy shell `groovysh` -> but wont know about gradle - good for experimenting
+- groovy compiler `groovyc`
+
+- integration : gradle task -> launch groowy shell for the whole project - allows to run interactively tests for own lcasses and libraries
+Adding to the app/build.gradle file. Also adding shell integration
+
+
 ```bash
+# Launching groovy console
+./gradlew runConsole
+./gradlew runShell
+
+
 
 ```
 
+Need some preliminary debugging 
 ```bash
+./gradlew runShell --debug
+java --add-opens=java.base/java.lang=ALL-UNNAMED -cp "<PASTE YOUR VERY LONG CLASSPATH HERE>" org.codehaus.groovy.tools.shell.Main
 
+./gradlew printCp # next stage debugging
 ```

@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "nicolasvuillamy.vscode-groovy-lint",
-        "formulahendry.code-runner"
+        "formulahendry.code-runner",
+        "exodiusstudios.comment-anchors"
     ]
 }
