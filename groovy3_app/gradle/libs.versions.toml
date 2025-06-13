@@ -2,17 +2,13 @@
 # https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format
 
 [versions]
-groovy = "4.0.27"
+groovy-all = "3.0.24"
 guava = "33.4.5-jre"
 junit = "4.13.2"
-spock-core = "2.3-groovy-4.0"
+spock-core = "2.2-groovy-3.0"
 
 [libraries]
-# Define the Groovy Bill of Materials (BOM)
-groovy-bom = { module = "org.apache.groovy:groovy-bom", version.ref = "groovy" }
-# Define the core Groovy library (no version needed, the BOM handles it)
-groovy-core = { module = "org.apache.groovy:groovy" }
-
+groovy-all = { module = "org.codehaus.groovy:groovy-all", version.ref = "groovy-all" }
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
 junit = { module = "junit:junit", version.ref = "junit" }
 spock-core = { module = "org.spockframework:spock-core", version.ref = "spock-core" }

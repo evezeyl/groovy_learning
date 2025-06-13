@@ -99,16 +99,32 @@ Adding to the app/build.gradle file. Also adding shell integration
 ```bash
 # Launching groovy console
 ./gradlew runConsole
-./gradlew runShell
-
-
-
+#./gradlew runShell # never manage to make this work even with debugging
+# ./gradlew runShell --debug
+./gradlew --stop
+./gradlew clean runConsole --refresh-dependencies
 ```
 
-Need some preliminary debugging 
 ```bash
-./gradlew runShell --debug
-java --add-opens=java.base/java.lang=ALL-UNNAMED -cp "<PASTE YOUR VERY LONG CLASSPATH HERE>" org.codehaus.groovy.tools.shell.Main
 
-./gradlew printCp # next stage debugging
 ```
+
+gradle lib version `.lib.version.toml` -> edited to use correct groovy
+Need some preliminary debugging 
+
+> Ok - I see that the appache version of groovy is 3 ... with gradle so will start with that
+**shift to groovy3_app**LINK 
+
+
+- added tasks - examples commands to run gradle 
+
+```bash
+./gradlew runConsole
+./gradlew clean runConsole --refresh-dependencies
+
+# scratch pads examples // src/main/groovy/Scratch.groovy, Scratch2.groovy 
+ ./gradlew runScratch
+ ./gradlew runScratch2 --no-build-cache 
+```
+
+- modified gradle properties - so it can run with no cache by default - easier in the beginning to be sure it does what it should do
