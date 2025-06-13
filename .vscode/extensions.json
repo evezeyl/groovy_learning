@@ -2,6 +2,7 @@
     "recommendations": [
         "nicolasvuillamy.vscode-groovy-lint",
         "formulahendry.code-runner",
-        "exodiusstudios.comment-anchors"
+        "exodiusstudios.comment-anchors",
+        "naco-siren.gradle-language"
     ]
 }

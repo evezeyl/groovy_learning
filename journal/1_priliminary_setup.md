@@ -113,7 +113,7 @@ gradle lib version `.lib.version.toml` -> edited to use correct groovy
 Need some preliminary debugging 
 
 > Ok - I see that the appache version of groovy is 3 ... with gradle so will start with that
-**shift to groovy3_app**LINK 
+**shift to groovy3_app**
 
 
 - added tasks - examples commands to run gradle 
@@ -128,3 +128,5 @@ Need some preliminary debugging
 ```
 
 - modified gradle properties - so it can run with no cache by default - easier in the beginning to be sure it does what it should do
+
+- quotes should be single for string apparently

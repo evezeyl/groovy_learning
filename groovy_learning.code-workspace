@@ -8,7 +8,8 @@
 	"extensions": {
 		"recommendations": [
 			"formulahendry.code-runner",
-			"exodiusstudios.comment-anchors"
+			"exodiusstudios.comment-anchors",
+			"naco-siren.gradle-language"
 		]
 	}
 }
