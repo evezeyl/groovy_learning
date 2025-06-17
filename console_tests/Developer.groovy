@@ -1,3 +1,4 @@
+@groovy.transform.ToString()
 class Developer {
 
     // properties
