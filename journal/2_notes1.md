@@ -1,3 +1,5 @@
+
+## App structure
 cd /home/evezeyl/Documents/Insync/gdrive/WORK/GITS/PERSO/groovy_learning/first_app
 
 first_app/
@@ -14,7 +16,9 @@ first_app/
 // recommended to use gradle for build automation
 
 
-Making groovy run 
+## Making groovy run simply 
+
+cd console_only
 
 1. option
 ```
@@ -41,3 +45,14 @@ groovyConsole myapp.groovy
 
 Run [groovy on vscode](https://www.youtube.com/watch?v=bh2zQkJFPmE)
 
+- use `code-groovy` extension for language support
+- use `Code Runner` to allow running the code -> run (ctrl+alt+N)
+
+
+!! if app script is not compile before using the console, it wont work !! 
+because it appear the console is looking for a main method, which it does not find (so does not fit the criteria as runable script)
+
+
+4. Easeyoursel with gradle
+- init on a new repository ... 
+- run ... compile for you
